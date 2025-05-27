@@ -1,0 +1,56 @@
+
+.blog-item {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1) !important;
+}
+
+.post-excerpt p {
+    line-height: 1.6;
+}
+
+.page-header {
+    background: linear-gradient(rgba(24, 29, 56, .7), rgba(24, 29, 56, .7)), url('{% static "dashboard/img/carousel-1.jpg" %}');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.pagination .page-link {
+    color: #fb873f;
+    border-color: #fb873f;
+}
+
+.pagination .page-item.active .page-link {
+    background-color: #fb873f;
+    border-color: #fb873f;
+}
+
+.pagination .page-link:hover {
+    color: #fff;
+    background-color: #fb873f;
+    border-color: #fb873f;
+}
+
+.btn-primary {
+    background-color: #fb873f;
+    border-color: #fb873f;
+}
+
+.btn-primary:hover {
+    background-color: #e8753a;
+    border-color: #e8753a;
+}
+
+.btn-outline-primary {
+    color: #fb873f;
+    border-color: #fb873f;
+}
+
+.btn-outline-primary:hover {
+    background-color: #fb873f;
+    border-color: #fb873f;
+}
