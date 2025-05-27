@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-ri7-&!a8t^5q3_&hsi6@5-s*ogae+r9jr84o2d!6%hr%hihpxx
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'language-assistant.onrender.com']
 
 
 # Application definition
@@ -53,6 +53,7 @@ INSTALLED_APPS = [
     'livestream.apps.LivestreamConfig'
 ]
 MIDDLEWARE = [
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -148,8 +149,6 @@ LOGIN_URL = 'dashboard:home'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
-import os
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
